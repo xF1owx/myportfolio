@@ -1,0 +1,18 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %} 
+<a href="/accueil">
+    <img src="{{ asset('images/site/arrowleft.svg') }}" class="back" height="5%" width="5%">
+</a>
+
+<div class="cvSlot">
+     <iframe src="{{ asset('images/site/CV.pdf') }}" width="85%" height="80%" align="middle"  ></iframe>
+</div>
+    <div class="buttonSpot">
+        <a href="assets/images/site/CV.pdf" download="CV">
+            <button class="bouttondl btn btn-outline-success bouttondl">Telecharger</button>
+        </a>
+</div>
+
+{% endblock %}

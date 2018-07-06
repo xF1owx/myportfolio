@@ -1,3 +1,22 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+   path: /
+   controller: App\Controller\Home::showHome
+
+
+home:
+  path: /accueil
+  controller: App\Controller\Accueil::showAccueil
+
+
+demo:
+  path: /demo
+  controller: App\Controller\Demo::showDemo
+
+
+pagecv:
+  path: /pagecv
+  controller: App\Controller\Cv::ShowCv
+
+contact:
+  path: /contact
+  controller: App\Controller\Contact::showContact

@@ -1,0 +1,53 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %} 
+<a href="/accueil">
+    <img src="{{ asset('images/site/arrowleft.svg') }}" class="back" height="5%" width="5%">
+</a>
+
+
+<div class="container">
+    <div class="row contactrow">
+        <h1 class="tocontactme"> Pour me contacter </h1>
+    </div>
+    <div class="row mailaddress contactrow">
+
+        <div class="col-2 Image">
+            <img src="{{ asset('images/site/logos/gmail-logo.png') }}" class="logogmail" >
+        </div>
+        <div class="col-10 Contenu tacenter">
+            <p> florian.r.pro@gmail.com </p>
+        </div>
+        
+    </div>
+    <div class="row telephone contactrow">
+
+        <div class="col-2 Image">
+            <img src="{{ asset('images/site/logos/phonelogo.png') }}" class="logophone" >
+        </div>
+        <div class="col-10 Contenu tacenter">
+            <p> +3364705043 </p>
+        </div>
+        
+    </div>
+    <div class="row facebook contactrow">
+
+        <div class="col-2 Image">
+            <img src="{{ asset('images/site/logos/fb-logo.png') }}" class="logofb" >
+        </div>
+        <div class="col-10 Contenu tacenter">
+            <p> facebook/florianr5</p>
+        </div>
+        
+    </div>
+    <div class="row border contactrow">
+
+        <div class="col-12">
+            <p> PETIT TEXTE </pv> 
+        </div>
+        
+        
+    </div>
+</div>
+{% endblock %}

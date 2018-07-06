@@ -1,0 +1,467 @@
+@font-face {
+    font-family: v1;
+    src: url("../fonts/VeganSt.ttf");
+}
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+body {
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body.modal-open {
+  
+    overflow: hidden;
+    position: fixed;
+}
+body.viewport-lg {
+    position: absolute; 
+}
+.tacenter p{
+    margin-bottom: 0;
+    
+}
+
+.tacenterz{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.tacenterz h2{
+    font-family: v1;
+    font-size: 1.5rem;
+    margin-top:10%;
+}
+
+body{
+    height:100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, #33ccff 52%, #3399ff 85%);
+}
+.logo-place{
+    justify-content: center;
+    align-items: center;
+}
+.enterbutton{
+
+    width:100px;
+    height:40px;
+    border-radius: 4px;
+}
+
+
+.home-logo{
+    width: 100%;
+    height:80%;
+}
+
+.site-logo{
+    margin-left:8%;
+    margin-top:5%;
+}
+
+.leftarrow{
+   height:5%;
+   width:10%;
+}
+
+.logo-links{
+display: flex;
+margin:auto;
+padding: auto;
+justify-content: center;
+align-items: center;
+position:fixed;
+width: 100%;
+bottom:20px;
+
+
+}
+
+
+html{
+    height:100%;
+}
+.link-logo{
+    height:40px;
+    width:40px;
+   
+}
+.cvSlot{
+    display:flex;
+    height:80%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+
+}
+footer{
+    display:flex;
+    margin:0;
+    padding: 0;
+    justify-content: center;
+    bottom:20px;
+
+}
+
+.name{
+    font-size: 1.5rem;
+    margin-left: 4%;
+}
+
+.buttonSpot{
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    
+}
+
+.myName{
+    font-size: 1.4rem;
+    margin-left: 9%;
+    font-family: v1;
+    margin-top: 10%;
+}
+
+
+
+
+.spot-btn{
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-place{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+}
+
+.back{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.tocontactme{
+    font-family: v1;
+    margin-top:5%;
+    margin-left:25%;
+    font-size: 1.5rem;
+}
+
+
+.logogmail{
+    height: 50px;
+}
+
+.logophone{
+    height: 50px;
+}
+
+.logofb{
+    height: 50px;
+}
+
+.contactrow{
+    margin:auto;
+    margin-bottom: 10%;
+    align-items: center;
+    font-size: 10px;
+    
+
+}
+
+.border{
+    border-style:solid 3px;
+    height:20%;
+    width: 90%;
+    margin-left: 1%;
+    
+}
+
+ /* menu et Autre pages  */
+.menu-layer{
+
+    background-color: rgb(253, 253, 253);
+    height: 100%;
+    width:100%;
+    z-index: 150;
+    position:absolute;
+    left: 100%;
+    top:0%;
+    transition: left 1s;
+    -webkit-box-shadow: -8px 0px 5px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: -8px 0px 5px 0px rgba(0,0,0,0.51);
+    box-shadow: -8px 0px 5px 0px rgba(0,0,0,0.51);
+    
+}
+
+.open-menu{
+    position: absolute;
+    top:48%;
+    left:92%;
+    
+}
+.close-menu{
+    position: absolute;
+    top:48%;
+}
+
+.cv-layer{
+    background-color: rgb(233, 229, 229);
+    height: 100%;
+    width:100%;
+    z-index: 160;
+    position:absolute;
+    left: 0%;
+    top:0%;
+    transition: left 1s;
+    display:flex;
+    
+}
+.contact-layer{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width:100%;
+    z-index: 165;
+    position:absolute;
+    left: 0%;
+    top:0%;
+    transition: left 1s;
+    display:flex;
+    
+}
+.projects-layer{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width:100%;
+    z-index: 170;
+    position:absolute;
+    left: 0%;
+    top:0%;
+    transition: left 1s;
+    display:flex;
+    
+}
+
+.skills-layer{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width:100%;
+    z-index: 175;
+    position:absolute;
+    left: 0%;
+    top:0%;
+    transition: left 1s;
+    
+}
+
+/* boutons ouverture de catégories   */
+.open-cv{
+    position: absolute;
+    top:25%;
+}
+.open-cv-2{
+    position: absolute;
+    top:70%;
+}
+.close-cv{
+    position: absolute;
+    top:25%;
+    visibility: hidden;
+}
+.close-cv-2{
+    position: absolute;
+    top:70%;
+    visibility: hidden;
+}
+
+.open-contact{
+    position: absolute;
+    top:25%;
+}
+.open-contact-2{
+    position: absolute;
+    top:70%;
+}
+
+.close-contact{
+    position: absolute;
+    top:25%;
+    visibility: hidden;
+}
+.close-contact-2{
+    position: absolute;
+    top:70%;
+    visibility: hidden;
+}
+
+.open-projects{
+    position: absolute;
+    top:25%;
+}
+.open-projects-2{
+    position: absolute;
+    top:70%;
+}
+.close-projects{
+    position: absolute;
+    top:25%;
+    visibility: hidden;
+}
+.close-projects-2{
+    position: absolute;
+    top:70%;
+    visibility: hidden;
+}
+
+.open-skills{
+    position: absolute;
+    top:25%;
+}
+.open-skills-2{
+    position: absolute;
+    top:70%;
+}
+
+.close-skills{
+    position: absolute;
+    top:25%;
+    visibility: hidden;
+}
+.close-skills-2{
+    position: absolute;
+    top:70%;
+    visibility: hidden;
+}
+
+.cv-slot{
+    position:absolute;
+    top:47%;
+    width:5%;
+    height:10%;
+    /* left: -0.5%; */
+    text-align: center;
+   
+  
+}
+.catname-slot{
+    position:absolute;
+    top:35%;
+    width:5%;
+    height:10%;
+    /* left: -0.5%; */
+   
+  
+}
+.contact-slot{
+    position:absolute;
+    top:42%;
+    width:5%;
+    height:10%;
+    /* left: -0.5%; */
+   
+  
+}
+.projects-slot{
+    position:absolute;
+    top:42%;
+    width:5%;
+    height:10%;
+    /* left: -0.5%; */
+   
+  
+}
+.skills-slot{
+    position:absolute;
+    top:38%;
+    width:5%;
+    height:10%;
+    /* left: -0.5%; */
+   
+  
+}
+
+.slot-text{
+  margin:0;
+    writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1 rem;
+
+}
+
+.onglet-border{
+    height: 100%;
+    width:6%;
+    border: #000066 solid 1px;
+    background: linear-gradient(to bottom, #66ccff 52%, #000066 85%);   
+}
+
+
+.layer-content{
+    position: relative;
+    top:0;
+    
+}
+.iframe-cv{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+
+.boutonDL{
+    position: relative;
+    left: 32%;
+    margin-top: 5%;
+}
+
+.Contenu{
+    color:black;
+}
+.testprojet{
+    height:2rem;;
+    width: 10rem;
+    background-color: black;
+}
+
+.emplacements-projets{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.apercu{
+    margin-top:8%;
+}
+
+.project-detail-layer{
+    background-color: rgb(250, 250, 250);
+    height: 100%;
+    width:100%;
+    position:absolute;
+    top:100%;
+    left:0%;
+    transition: top 1s;
+    z-index: 200;
+}
+
+.close-details{
+    position: absolute;
+    left:88%;
+    margin-top:5%;
+    z-index: 210;
+}

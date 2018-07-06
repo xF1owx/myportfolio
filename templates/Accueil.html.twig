@@ -1,0 +1,223 @@
+{% extends "base.html.twig" %} {% block title %}Accueil{% endblock %} {% block body %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/demo">
+    <img src="{{ asset('images/site/logos/logoFR.svg') }}" class="site-logo" height="50px" width="50px">
+  </a>
+</nav>
+
+<h1 class="myName"> Florian Rouillier </h1>
+
+{# MENU ET CONTENU #} {# Fleche ouverture menu #}
+<img src="{{ asset('images/site/arrowleft.svg') }}" id="open-menu" class="open-menu" height="5%" width="5%" onmouseover=""
+  style="cursor: pointer"> {# Fleche ouverture menu #} {# Couche menu total #}
+<div id="menu-layer" class="menu-layer">
+  <div class="onglet-border">
+    {# Fleche fermeture menu #}
+    <img src="{{ asset('images/site/arrowright.png') }}" id="close-menu" class="close-menu" height="3%" width="5%" onmouseover=""
+      style="cursor: pointer"> {# Fleche fermeture menu #}
+  </div>
+
+
+
+  {# Couche CV #}
+  <div class="cv-layer" id="cv-layer">
+
+    <div class="onglet-border" id="onglet-cv" onmouseover="" style="cursor: pointer">
+      <img src="{{ asset('images/site/arrowleft.svg') }}" id="open-cv" class="open-cv" height="5%" width="5%">
+      <img src="{{ asset('images/site/arrowright.svg') }}" id="close-cv" class="close-cv" height="5%" width="5%">
+      <div class="cv-slot">
+        <p class="slot-text"> CV </p>
+      </div>
+      <img src="{{ asset('images/site/arrowright.svg') }}" id="close-cv-2" class="close-cv-2" height="5%" width="5%">
+      <img src="{{ asset('images/site/arrowleft.svg') }}" id="open-cv-2" class="open-cv-2" height="5%" width="5%">
+    </div>
+
+    <div class="layer-content container">
+      {# {{ asset('images/site/CV.pdf') }} #}
+      <div class="row">
+        <div class="col-12">
+            <img src="{{ asset('images/site/sortie.png') }} " width="80%" height="80%" align="middle" class="iframe-cv img-fluid">
+        </div>
+      </div>
+      <a href="assets/images/site/CV.pdf" download="CV">
+        <button class="boutonDL btn btn-outline-success">Telecharger</button>
+      </a>
+
+    </div>
+  </div>
+  {# FIN Couche CV #} {# Couche CONTACT #}
+  <div class="contact-layer" id="contact-layer" onmouseover="" style="cursor: pointer">
+    <div class="onglet-border" id="onglet-contact">
+      <img src="{{ asset('images/site/arrowleft.svg') }}" id="open-contact" class="open-contact" height="5%" width="5%">
+      <img src="{{ asset('images/site/arrowright.svg') }}" id="close-contact" class="close-contact" height="5%" width="5%">
+      <div class="contact-slot">
+        <p class="slot-text"> CONTACT </p>
+      </div>
+
+      <img src="{{ asset('images/site/arrowright.svg') }}" id="close-contact-2" class="close-contact-2" height="5%" width="5%">
+      <img src="{{ asset('images/site/arrowleft.svg') }}" id="open-contact-2" class="open-contact-2" height="5%" width="5%">
+    </div>
+    <div class="layer-content container">
+      <div class="row ">
+        <div class="col-12 tacenterz ">
+          <h2> Pour me contacter </h2>
+        </div>
+      </div>
+      <div class="row mailaddress contactrow">
+
+        <div class="col-4 Image">
+          <img src="{{ asset('images/site/logos/gmail-logo.png') }}" class="logogmail" width="50px" height="50px">
+        </div>
+        <div class="col-8 Contenu tacenter">
+          <p> florian.r.pro@gmail.com </p>
+        </div>
+
+      </div>
+      <div class="row telephone contactrow ">
+
+        <div class="col-4 Image">
+          <img src="{{ asset('images/site/logos/phonelogo.png') }}" class="logophone">
+        </div>
+        <div class="col-8 Contenu tacenter">
+          <p> +3364705043 </p>
+        </div>
+
+      </div>
+      <div class="row facebook contactrow centered">
+
+        <div class="col-5 Image">
+          <img src="{{ asset('images/site/logos/fb-logo.png') }}" class="logofb img-fluid">
+        </div>
+        <div class="col-7 Contenu tacenter">
+          <p> facebook/florianr5</p>
+        </div>
+
+      </div>
+      <div class="row border contactrow centered">
+
+        <div class="col-12">
+          <p> PETIT TEXTE </p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  {# FIN Couche CONTACT #} {# Couche PROJECTS #}
+  <div class="projects-layer" id="projects-layer" onmouseover="" style="cursor: pointer">
+    <div class="onglet-border" id="onglet-projects">
+      <img src="{{ asset('images/site/arrowleft.svg') }}" id="open-projects" class="open-projects" height="5%" width="5%">
+      <img src="{{ asset('images/site/arrowright.svg') }}" id="close-projects" class="close-projects" height="5%" width="5%">
+      <div class="projects-slot">
+        <p class="slot-text"> PROJETS </p>
+      </div>
+      <img src="{{ asset('images/site/arrowright.svg') }}" id="close-projects-2" class="close-projects-2" height="5%" width="5%">
+      <img src="{{ asset('images/site/arrowleft.svg') }}" id="open-projects-2" class="open-projects-2" height="5%" width="5%">
+    </div>
+
+    <div class="layer-content container">
+      <div class="row">
+        <div class="col-12 tacenterz">
+          <h2> Projets </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12">
+          
+          <div class="input-group">
+              <select class="custom-select" id="inputGroupSelect04">
+                <option selected>Filtrer</option>
+                <option value="1">PHP</option>
+                <option value="2">JavaScript</option>
+                <option value="3">CSS</option>
+              </select>
+              
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit">Filtrer</button>
+              </div>
+          </div>
+            
+              <div class="row">
+                  
+                  <div class="emplacements-projets">
+                  
+                  <img src="{{ asset('images/site/testimg.jpg') }}"  id ="slot-projet-1" class="apercu img-thumbnail sp1" height="40%" width="40%">
+                  <img src="{{ asset('images/site/testimg.jpg') }}"  id ="slot-projet-2" class="apercu img-thumbnail sp2" height="40%" width="40%">
+                  <img src="{{ asset('images/site/testimg.jpg') }}"  id ="slot-projet-3" class="apercu img-thumbnail sp3" height="40%" width="40%">
+                  <img src="{{ asset('images/site/testimg.jpg') }}"  id ="slot-projet-4" class="apercu img-thumbnail sp4" height="40%" width="40%">
+                  <img src="{{ asset('images/site/testimg.jpg') }}"  id ="slot-projet-5" class="apercu img-thumbnail sp5" height="40%" width="40%">
+                  <img src="{{ asset('images/site/testimg.jpg') }}"  id ="slot-projet-6" class="apercu img-thumbnail sp6" height="40%" width="40%">
+
+                  {# La au clique sur l'apercu je declanche le chargement du
+                   projet correspondant sur le slider qui viens du bas #}
+                   
+                   </div>
+            </div>
+          
+        </div>
+      </div>
+      {# COUCHE DETAILS PROJET  #}
+      <div id="project-detail-layer" class="project-detail-layer">
+          <img src="{{ asset('images/site/arrowdown.png') }}" id="close-details" class="close-details" height="4%" width="5%">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 tacenterz">
+                 <h2 class="project-title" id="project-title"> Nom Projet<h2> 
+                </div>
+              </div>
+            </div>
+      </div>
+      {# FIN COUCHE DETAILS PROJET  #}
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+  
+  {# FIN Couche PROJECTS #} 
+  
+  {# Couche SKILLS #}
+  <div class="skills-layer" id="skills-layer">
+
+    <div class="onglet-border" id="onglet-skills" onmouseover="" style="cursor: pointer">
+
+      <img src="{{ asset('images/site/arrowleft.svg') }}" id="open-skills" class="open-skills" height="5%" width="5%">
+      <img src="{{ asset('images/site/arrowright.svg') }}" id="close-skills" class="close-skills" height="5%" width="5%">
+      <div class="skills-slot">
+        <p class="slot-text"> COMPETENCES </p>
+      </div>
+      <img src="{{ asset('images/site/arrowright.svg') }}" id="close-skills-2" class="close-skills-2" height="5%" width="5%">
+      <img src="{{ asset('images/site/arrowleft.svg') }}" id="open-skills-2" class="open-skills-2" height="5%" width="5%">
+    </div>
+  </div>
+  {# FIN Couche SKILLS #}
+
+</div>
+
+      
+      
+{# FIN BLOCK MENU ET CONTENU #} {% endblock %} {% block footer%}
+
+<div class="logo-links ">
+  <div class="col-sm-3 spot-btn">
+    <img src="{{ asset('images/site/logos/github-logo.png') }}" class="link-logo img-fluid" id="githublogo" onmouseover="" style="cursor: pointer">
+  </div>
+  <div class="col-sm-3 spot-btn">
+    <img src="{{ asset('images/site/logos/linked-in-logo.png') }}" class="link-logo img-fluid" id="linkedinlogo" onmouseover=""
+      style="cursor: pointer">
+  </div>
+  <div class="col-sm-3 spot-btn">
+    <img src="{{ asset('images/site/logos/fb-logo.png') }}" class="link-logo img-fluid" id="fblogo" onmouseover="" style="cursor: pointer">
+  </div>
+</div>
+
+
+{% endblock %}
