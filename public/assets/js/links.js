@@ -53,11 +53,11 @@ document.getElementById("fblogo").addEventListener('mouseup',function (e){
 
 // Sortie du menu //
 document.getElementById("open-menu").addEventListener('click',function (e){
-    document.getElementById('menu-layer').style.left = '75%';
-    document.getElementById('cv-layer').style.left = '5%';
-    document.getElementById('contact-layer').style.left = '10%';
-    document.getElementById('projects-layer').style.left = '15%';
-    document.getElementById('skills-layer').style.left = '20%'
+    document.getElementById('menu-layer').style.left = '53%';
+    document.getElementById('cv-layer').style.left = '10%';
+    document.getElementById('contact-layer').style.left = '19%';
+    document.getElementById('projects-layer').style.left = '28%';
+    document.getElementById('skills-layer').style.left = '37%'
 
 });
 
@@ -70,14 +70,14 @@ document.getElementById("close-menu").addEventListener('click',function (e){
 document.getElementById('onglet-cv').addEventListener('click',function (e){
 if (timing == 1 ) {
     console.log("coucou");
-    document.getElementById('cv-layer').style.left = '5%';
+    document.getElementById('cv-layer').style.left = '10%';
     document.getElementById('open-cv-2').style.visibility = 'visible';
     document.getElementById('open-cv').style.visibility = 'visible';
     document.getElementById('close-cv-2').style.visibility = 'hidden';
     document.getElementById('close-cv').style.visibility = 'hidden';
-    document.getElementById('contact-layer').style.left = '10%';
-    document.getElementById('projects-layer').style.left = '15%';
-    document.getElementById('skills-layer').style.left = '20%';
+    document.getElementById('contact-layer').style.left = '19%';
+    document.getElementById('projects-layer').style.left = '28%';
+    document.getElementById('skills-layer').style.left = '37%';
     timing = 0;
     console.log(timing);
     
@@ -86,7 +86,7 @@ if (timing == 1 ) {
  //OUVERTURE  onlet cv//
 else if (timing == 0 ) {
 
-    document.getElementById('cv-layer').style.left= '-75%';
+    document.getElementById('cv-layer').style.left= '-53%';
     document.getElementById('open-cv-2').style.visibility = 'hidden';
     document.getElementById('open-cv').style.visibility = 'hidden';
     document.getElementById('close-cv-2').style.visibility = 'visible';
@@ -107,14 +107,14 @@ else if (timing == 0 ) {
 document.getElementById('onglet-contact').addEventListener('click',function (e){
     if (timing == 1 ) {
         console.log("coucou");
-        document.getElementById('contact-layer').style.left = '10%';
+        document.getElementById('contact-layer').style.left = '19%';
         document.getElementById('open-contact-2').style.visibility = 'visible';
         document.getElementById('open-contact').style.visibility = 'visible';
         document.getElementById('close-contact-2').style.visibility = 'hidden';
         document.getElementById('close-contact').style.visibility = 'hidden';
-        document.getElementById('cv-layer').style.left = '5%';
-        document.getElementById('projects-layer').style.left = '15%';
-        document.getElementById('skills-layer').style.left = '20%';
+        document.getElementById('cv-layer').style.left = '10%';
+        document.getElementById('projects-layer').style.left = '28%';
+        document.getElementById('skills-layer').style.left = '37%';
         timing = 0;
         console.log(timing);
         
@@ -123,7 +123,7 @@ document.getElementById('onglet-contact').addEventListener('click',function (e){
      //OUVERTURE  onlet contact//
     else if (timing == 0 ) {
     
-        document.getElementById('contact-layer').style.left= '-75%';
+        document.getElementById('contact-layer').style.left= '-53%';
         document.getElementById('open-contact-2').style.visibility = 'hidden';
         document.getElementById('open-contact').style.visibility = 'hidden';
         document.getElementById('close-contact-2').style.visibility = 'visible';
@@ -136,6 +136,22 @@ document.getElementById('onglet-contact').addEventListener('click',function (e){
         console.log(timing);
     
     }
+    else if (timing == 8 ) {
+        document.getElementById('contact-form-layer').style.top = '100%';
+        document.getElementById('contact-layer').style.left = '19%';
+        document.getElementById('open-contact-2').style.visibility = 'visible';
+        document.getElementById('open-contact').style.visibility = 'visible';
+        document.getElementById('close-contact-2').style.visibility = 'hidden';
+        document.getElementById('close-contact').style.visibility = 'hidden';
+        document.getElementById('cv-layer').style.left = '10%';
+        document.getElementById('projects-layer').style.left = '28%';
+        document.getElementById('skills-layer').style.left = '37%';
+        timing = 0;
+        
+        
+        console.log(timing);
+    
+    }
     
     
 });
@@ -144,14 +160,14 @@ document.getElementById('onglet-contact').addEventListener('click',function (e){
 document.getElementById('onglet-projects').addEventListener('click',function (e){
         if (timing == 1 ) {
             console.log("coucou");
-            document.getElementById('projects-layer').style.left = '15%';
+            document.getElementById('projects-layer').style.left = '28%';
             document.getElementById('open-projects-2').style.visibility = 'visible';
             document.getElementById('open-projects').style.visibility = 'visible';
             document.getElementById('close-projects-2').style.visibility = 'hidden';
             document.getElementById('close-projects').style.visibility = 'hidden';
-            document.getElementById('cv-layer').style.left = '5%';
-            document.getElementById('contact-layer').style.left = '10%';
-            document.getElementById('skills-layer').style.left = '20%';
+            document.getElementById('cv-layer').style.left = '10%';
+            document.getElementById('contact-layer').style.left = '19%';
+            document.getElementById('skills-layer').style.left = '37%';
             timing = 0;
             console.log(timing);
             
@@ -159,21 +175,21 @@ document.getElementById('onglet-projects').addEventListener('click',function (e)
         }
         else if (timing == 4) {
             document.getElementById('project-detail-layer').style.top = '100%';
-            document.getElementById('projects-layer').style.left = '15%';
-            document.getElementById('projects-layer').style.left = '15%';
+            document.getElementById('projects-layer').style.left = '28%';
+           
             document.getElementById('open-projects-2').style.visibility = 'visible';
             document.getElementById('open-projects').style.visibility = 'visible';
             document.getElementById('close-projects-2').style.visibility = 'hidden';
             document.getElementById('close-projects').style.visibility = 'hidden';
-            document.getElementById('cv-layer').style.left = '5%';
-            document.getElementById('contact-layer').style.left = '10%';
-            document.getElementById('skills-layer').style.left = '20%';
+            document.getElementById('cv-layer').style.left = '10%';
+            document.getElementById('contact-layer').style.left = '19%';
+            document.getElementById('skills-layer').style.left = '37%';
             timing = 0;
         }
          //OUVERTURE  onglet projects//
         else if (timing == 0 ) {
         
-            document.getElementById('projects-layer').style.left= '-75%';
+            document.getElementById('projects-layer').style.left= '-53%';
             document.getElementById('open-projects-2').style.visibility = 'hidden';
             document.getElementById('open-projects').style.visibility = 'hidden';
             document.getElementById('close-projects-2').style.visibility = 'visible';
@@ -195,14 +211,14 @@ document.getElementById('onglet-projects').addEventListener('click',function (e)
 document.getElementById('onglet-skills').addEventListener('click',function (e){
     if (timing == 1 ) {
         console.log("coucou");
-        document.getElementById('projects-layer').style.left = '15%';
+        document.getElementById('projects-layer').style.left = '28%';
         document.getElementById('open-skills-2').style.visibility = 'visible';
         document.getElementById('open-skills').style.visibility = 'visible';
         document.getElementById('close-skills-2').style.visibility = 'hidden';
         document.getElementById('close-skills').style.visibility = 'hidden';
-        document.getElementById('cv-layer').style.left = '5%';
-        document.getElementById('contact-layer').style.left = '10%';
-        document.getElementById('skills-layer').style.left = '20%';
+        document.getElementById('cv-layer').style.left = '10%';
+        document.getElementById('contact-layer').style.left = '19%';
+        document.getElementById('skills-layer').style.left = '37%';
         timing = 0;
         console.log(timing);
         
@@ -211,7 +227,7 @@ document.getElementById('onglet-skills').addEventListener('click',function (e){
      //OUVERTURE  onglet skills//
     else if (timing == 0 ) {
     
-        document.getElementById('skills-layer').style.left= '-75%';
+        document.getElementById('skills-layer').style.left= '-53%';
         document.getElementById('open-skills-2').style.visibility = 'hidden';
         document.getElementById('open-skills').style.visibility = 'hidden';
         document.getElementById('close-skills-2').style.visibility = 'visible';
@@ -228,66 +244,22 @@ document.getElementById('onglet-skills').addEventListener('click',function (e){
     
     });
 
+
     
-//OUVERTURE FERMETURE DETAILS //
-document.getElementById('slot-projet-1').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '0%';
-    timing = 4;
-});
+    
 
-document.getElementById('close-details').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '100%';
-});
-
-document.getElementById('slot-projet-2').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '0%';
-    timing = 4;
-});
-
-document.getElementById('close-details').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '100%';
-});
-
-document.getElementById('slot-projet-3').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '0%';
-    timing = 4;
-});
-
-document.getElementById('close-details').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '100%';
-});
-document.getElementById('slot-projet-4').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '0%';
-    timing = 4;
-});
-
-document.getElementById('close-details').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '100%';
-});
-
-document.getElementById('slot-projet-5').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '0%';
-    timing = 4;
-});
-
-document.getElementById('close-details').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '100%';
-});
-
-document.getElementById('slot-projet-6').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '0%';
-    timing = 4;
-});
-
-document.getElementById('close-details').addEventListener('click',function (e){
-    document.getElementById('project-detail-layer').style.top = '100%';
-});
-
-
-
-
-
-
-
+    //OUVERTURE CONTACTFORM //
+    document.getElementById('showcontactform').addEventListener('click',function (e){
+        document.getElementById('contact-form-layer').style.top = '0%';
+        timing = 8;
+        console.log(timing);
+    });
+    
+    // FERMETURE CONTACFORM //
+    document.getElementById('close-contactform').addEventListener('click',function (e){
+        document.getElementById('contact-form-layer').style.top = '100%';
+        timing = 1;
+    });
+    
 
 

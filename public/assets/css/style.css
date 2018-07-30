@@ -2,14 +2,24 @@
     font-family: v1;
     src: url("../fonts/VeganSt.ttf");
 }
+@font-face {
+    font-family: v2;
+    src: url("../fonts/Oldenburg.ttf");
+}
+
+.emplacements-projets{
+    margin-top:8%;
+}
 body.modal-open {
     overflow: hidden;
     position: fixed;
 }
-body {
-    
+body { 
     overflow-x: hidden;
     overflow-y: hidden;
+}
+.comp-row{
+    margin-bottom:5%;
 }
 body.modal-open {
   
@@ -19,6 +29,8 @@ body.modal-open {
 body.viewport-lg {
     position: absolute; 
 }
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
 .tacenter p{
     margin-bottom: 0;
     
@@ -31,10 +43,23 @@ body.viewport-lg {
 
 .tacenterz h2{
     font-family: v1;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-top:10%;
 }
 
+.slotimagecomp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .comp-name{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.4rem;
+    font-family: v2;
+    font-weight: bold;
+ }
 body{
     height:100%;
     margin: 0;
@@ -57,7 +82,15 @@ body{
     width: 100%;
     height:80%;
 }
-
+.emplacements-comps{
+    overflow: scroll;
+    height: 70%;
+    border-radius: 0px 18px 0px 23px;
+    -moz-border-radius: 0px 18px 0px 23px;
+    -webkit-border-radius: 0px 18px 0px 23px;
+    border: 5px solid #4f4f4f;
+    padding:10%;
+}
 .site-logo{
     margin-left:8%;
     margin-top:5%;
@@ -106,7 +139,10 @@ footer{
     bottom:20px;
 
 }
-
+.centerz{
+    display:flex;
+    justify-content: center;
+}
 .name{
     font-size: 1.5rem;
     margin-left: 4%;
@@ -120,7 +156,7 @@ footer{
 }
 
 .myName{
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     margin-left: 9%;
     font-family: v1;
     margin-top: 10%;
@@ -131,8 +167,9 @@ footer{
 
 .spot-btn{
 
+    display:flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 
@@ -153,40 +190,26 @@ footer{
     background-color: transparent !important;
 }
 
-.tocontactme{
-    font-family: v1;
-    margin-top:5%;
-    margin-left:25%;
-    font-size: 1.5rem;
-}
 
 
-.logogmail{
-    height: 50px;
-}
 
-.logophone{
-    height: 50px;
-}
-
-.logofb{
-    height: 50px;
-}
 
 .contactrow{
     margin:auto;
-    margin-bottom: 10%;
     align-items: center;
-    font-size: 10px;
+    font-size: 1.0rem;
+    height: 11%;
     
 
 }
-
+.btncontactform{
+    margin-top: 5%;
+}
 .border{
     border-style:solid 3px;
     height:20%;
-    width: 90%;
-    margin-left: 1%;
+    width: 100%;
+    
     
 }
 
@@ -209,13 +232,16 @@ footer{
 
 .open-menu{
     position: absolute;
-    top:48%;
+    top:49%;
     left:92%;
     
 }
 .close-menu{
     position: absolute;
-    top:48%;
+    height: 3%;
+    width: 100%; 
+    margin:auto 0;
+    top: 48.5%;
 }
 
 .cv-layer{
@@ -264,95 +290,96 @@ footer{
     left: 0%;
     top:0%;
     transition: left 1s;
+    display:flex;
     
 }
 
 /* boutons ouverture de catégories   */
 .open-cv{
     position: absolute;
-    top:25%;
+    top:5%;
 }
 .open-cv-2{
     position: absolute;
-    top:70%;
+    top:90%;
 }
 .close-cv{
     position: absolute;
-    top:25%;
+    top:5%;
     visibility: hidden;
 }
 .close-cv-2{
     position: absolute;
-    top:70%;
+    top:90%;
     visibility: hidden;
 }
 
 .open-contact{
     position: absolute;
-    top:25%;
+    top:5%;
 }
 .open-contact-2{
     position: absolute;
-    top:70%;
+    top:90%;
 }
 
 .close-contact{
     position: absolute;
-    top:25%;
+    top:5%;
     visibility: hidden;
 }
 .close-contact-2{
     position: absolute;
-    top:70%;
+    top:90%;
     visibility: hidden;
 }
 
 .open-projects{
     position: absolute;
-    top:25%;
+    top:5%;
 }
 .open-projects-2{
     position: absolute;
-    top:70%;
+    top:90%;
 }
 .close-projects{
     position: absolute;
-    top:25%;
+    top:5%;
     visibility: hidden;
 }
 .close-projects-2{
     position: absolute;
-    top:70%;
+    top:90%;
     visibility: hidden;
 }
 
 .open-skills{
     position: absolute;
-    top:25%;
+    top:5%;
 }
 .open-skills-2{
     position: absolute;
-    top:70%;
+    top:90%;
 }
 
 .close-skills{
     position: absolute;
-    top:25%;
+    top:5%;
     visibility: hidden;
 }
 .close-skills-2{
     position: absolute;
-    top:70%;
+    top:90%;
     visibility: hidden;
 }
 
-.cv-slot{
-    position:absolute;
-    top:47%;
+.nom-slot{
+    position:absolute; 
     width:5%;
-    height:10%;
-    /* left: -0.5%; */
+    height:100%;
     text-align: center;
+    font-size:1.5rem;
+    display : flex;
    
   
 }
@@ -362,68 +389,54 @@ footer{
     width:5%;
     height:10%;
     /* left: -0.5%; */
-   
+    font-size:1.5rem;
   
 }
-.contact-slot{
-    position:absolute;
-    top:42%;
-    width:5%;
-    height:10%;
-    /* left: -0.5%; */
-   
-  
-}
-.projects-slot{
-    position:absolute;
-    top:42%;
-    width:5%;
-    height:10%;
-    /* left: -0.5%; */
-   
-  
-}
-.skills-slot{
-    position:absolute;
-    top:38%;
-    width:5%;
-    height:10%;
-    /* left: -0.5%; */
-   
-  
-}
+
 
 .slot-text{
   margin:0;
     writing-mode: vertical-rl;
   text-orientation: upright;
-  font-size: 1 rem;
+  font-size: 18px;
+  display:block;
+  margin:auto 0;
 
 }
 
 .onglet-border{
+    padding-left: 2%;
     height: 100%;
-    width:6%;
-    border: #000066 solid 1px;
-    background: linear-gradient(to bottom, #66ccff 52%, #000066 85%);   
+    width:11%;
+    border: #020202 solid ;
+    border-width: 1px 0px 1px 1px;
+    /* background: linear-gradient(to top, #33ccff 52%, #3399ff 85%);   */
+    background: linear-gradient(to right, #33ccff 0%, #3399ff 100%); 
 }
 
-
+.short-desc{
+    font-size: 1.6rem;
+    margin:auto 0;
+}
 .layer-content{
     position: relative;
     top:0;
     
 }
 .iframe-cv{
-    margin-left: 3%;
-    margin-top: 3%;
+  
 }
-
+.layer-competency{
+    position: absolute;
+    top:0%;
+}
 
 .boutonDL{
     position: relative;
-    left: 32%;
-    margin-top: 5%;
+    margin-top: 20%;
+    width: 100%;
+
+height: 53px;
 }
 
 .Contenu{
@@ -434,20 +447,33 @@ footer{
     width: 10rem;
     background-color: black;
 }
-
-.emplacements-projets{
-    height:100%;
+.imagecomp{
+    height:60px;
+}
+#emplacements-projets{
+    
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: 500px;
+    overflow: scroll;
+    border-radius: 0px 18px 0px 23px;
+    -moz-border-radius: 0px 18px 0px 23px;
+    -webkit-border-radius: 0px 18px 0px 23px;
+    border: 5px solid #4f4f4f;
+    padding:2%;
     
 }
-
+ .projetsemp{
+     padding:5%;
+ }
 .apercu{
     margin-top:8%;
 }
-
+.project-capture{
+    height:100%;
+}
 .project-detail-layer{
     background-color: rgb(250, 250, 250);
     height: 100%;
@@ -459,9 +485,58 @@ footer{
     z-index: 200;
 }
 
+
+.contact-form-layer{
+    background-color: rgb(250, 250, 250);
+    height: 100%;
+    width:100%;
+    position:absolute;
+    top:100%;
+    left:0%;
+    transition: top 1s;
+    z-index: 200;
+}
+.smalltextcontact{
+    padding:6%;
+}
 .close-details{
     position: absolute;
     left:88%;
     margin-top:5%;
     z-index: 210;
+}
+.detailsemp{
+    border-radius: 0px 18px 0px 23px;
+    -moz-border-radius: 0px 18px 0px 23px;
+    -webkit-border-radius: 0px 18px 0px 23px;
+    border: 5px solid #4f4f4f;
+    padding:2%;
+}
+.close-demo{
+    position: absolute;
+    left:88%;
+    margin-top:5%;
+    z-index: 210;
+}
+#showcontactform{
+    margin-top:5%;
+}
+
+.ifc{
+    margin-bottom: 4%;
+}
+.close-contactform{
+    position: absolute;
+    left:88%;
+    margin-top:5%;
+    z-index: 210;
+}
+
+.full-desc-text{
+    font-size: 1.2rem;
+    margin-bottom:5%;
+    font-family: v2;
+}
+
+
 }
