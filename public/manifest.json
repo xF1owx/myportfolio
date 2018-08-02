@@ -1,15 +1,15 @@
 {
-    "name": "portfolio",
-    "short_name": "porf",
+    "name": "FRPortfolio",
+    "short_name": "Portfolio",
     "lang": "fr-FR",
-    "start_url": "localhost:8889/accueil",
+    "start_url": "https://florianr.promo-17.codeur.online/myportfolio/public/home",
     "display": "standalone",
-    "theme_color": "#009688",
-    "background_color": "#009688",
+    "theme_color": "#3399ff",
+    "background_color": "#3399ff",
     "icons": [
       {
         "src": "icone.png",
-        "sizes": "512x512",
+        "sizes": "180x180",
         "type": "image/png" 
       }
     ]

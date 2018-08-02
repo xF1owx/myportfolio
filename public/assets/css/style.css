@@ -7,13 +7,21 @@
     src: url("../fonts/Oldenburg.ttf");
 }
 
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
 .emplacements-projets{
     margin-top:8%;
+}
+
+
+.notOnPhone{
+    display:none;
 }
 body.modal-open {
     overflow: hidden;
     position: fixed;
 }
+
 body { 
     overflow-x: hidden;
     overflow-y: hidden;
@@ -30,7 +38,7 @@ body.viewport-lg {
     position: absolute; 
 }
 
-@media screen and (min-width: 200px) and (max-width: 640px) {
+
 .tacenter p{
     margin-bottom: 0;
     
@@ -76,19 +84,41 @@ body{
     height:40px;
     border-radius: 4px;
 }
+#arrow-drop-down{
+    color:red;
+}
+.scrollalertzone{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
 
+
+}
+
+#scrollalert{
+    height:100px;
+    
+
+}
+#scrollalert2{
+    height:100px;
+    
+
+}
 
 .home-logo{
     width: 100%;
     height:80%;
+    margin-top: 20%;
 }
 .emplacements-comps{
     overflow: scroll;
     height: 70%;
-    border-radius: 0px 18px 0px 23px;
-    -moz-border-radius: 0px 18px 0px 23px;
-    -webkit-border-radius: 0px 18px 0px 23px;
-    border: 5px solid #4f4f4f;
+    border-radius: 0px 0px 5px 0px;
+    -moz-border-radius: 0px 0px 5px 0px;
+    -webkit-border-radius: 0px 0px 5px 0px;
+    border: 2px solid#ccd6dc;
     padding:10%;
 }
 .site-logo{
@@ -119,8 +149,8 @@ html{
     height:100%;
 }
 .link-logo{
-    height:40px;
-    width:40px;
+    height:50px;
+    width:50px;
    
 }
 .cvSlot{
@@ -178,7 +208,7 @@ footer{
     width:100%;
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
+    margin-top: 30%;
 }
 
 .back{
@@ -192,13 +222,16 @@ footer{
 
 
 
-
+.smalltextcontact{
+    font-family: v2;
+}
 
 .contactrow{
     margin:auto;
     align-items: center;
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     height: 11%;
+    font-family: v2;
     
 
 }
@@ -415,7 +448,7 @@ footer{
 }
 
 .short-desc{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin:auto 0;
 }
 .layer-content{
@@ -423,9 +456,7 @@ footer{
     top:0;
     
 }
-.iframe-cv{
-  
-}
+
 .layer-competency{
     position: absolute;
     top:0%;
@@ -438,10 +469,14 @@ footer{
 
 height: 53px;
 }
-
+#fetchDescriptionAccueil{
+    font-family: v2;
+}
 .Contenu{
     color:black;
 }
+
+
 .testprojet{
     height:2rem;;
     width: 10rem;
@@ -456,12 +491,12 @@ height: 53px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 500px;
+    height: 400px;
     overflow: scroll;
-    border-radius: 0px 18px 0px 23px;
-    -moz-border-radius: 0px 18px 0px 23px;
-    -webkit-border-radius: 0px 18px 0px 23px;
-    border: 5px solid #4f4f4f;
+    border-radius: 0px 0px 5px 0px;
+    -moz-border-radius: 0px 0px 5px 0px;
+    -webkit-border-radius: 0px 0px 5px 0px;
+    border: 2px solid #ebeafc;
     padding:2%;
     
 }
@@ -469,7 +504,8 @@ height: 53px;
      padding:5%;
  }
 .apercu{
-    margin-top:8%;
+    margin-top: 1%;
+    margin-bottom: 5%;
 }
 .project-capture{
     height:100%;
@@ -506,10 +542,10 @@ height: 53px;
     z-index: 210;
 }
 .detailsemp{
-    border-radius: 0px 18px 0px 23px;
-    -moz-border-radius: 0px 18px 0px 23px;
-    -webkit-border-radius: 0px 18px 0px 23px;
-    border: 5px solid #4f4f4f;
+    border-radius: 0px 0px 5px 0px;
+-moz-border-radius: 0px 0px 5px 0px;
+-webkit-border-radius: 0px 0px 5px 0px;
+border: 2px solid #ebeafc;
     padding:2%;
 }
 .close-demo{
@@ -539,4 +575,49 @@ height: 53px;
 }
 
 
+}
+
+@media screen and (min-width: 640px) {
+    .notOnPhone{
+        background-color: #3399ff;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    }
+    .noPhoneMessage{
+        font-size: 5em;
+        font-family: v1;
+        
+    }
+    body { 
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .link-logo{
+        height:100px;
+        width:100px;
+    }
+    .textNoPhone{
+        display: flex;
+        justify-content: center;
+    }
+
+    body{
+        background-color: #3399ff;
+    }
+
+    .logo-place{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-place{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

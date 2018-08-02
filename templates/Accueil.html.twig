@@ -1,8 +1,24 @@
 {% extends "base.html.twig" %} {% block title %}Accueil{% endblock %} {% block body %}
+<div class="notOnPhone">
+  <div class="notPhoneContent">
+    <div class="textNoPhone">
+      <p class="noPhoneMessage">Merci de consulter ce site sur smartphone</p>
+    </div>
+
+        <div class="textNoPhone">
+          <a href="https://github.com/xF1owx"><img src="{{ asset('images/site/logos/github-logo.png') }}"  class="link-logo img-fluid" id="githublogo" onmouseover="" style="cursor: pointer"></a>
+          <a href="https://fr.linkedin.com/in/florian-rouillier-383354ab"><img src="{{ asset('images/site/logos/linked-in-logo.png') }}" class="link-logo img-fluid" id="linkedinlogo" onmouseover="" style="cursor: pointer"></a>
+          <a href="https://www.facebook.com/florian.rouillier.5"><img src="{{ asset('images/site/logos/fb-logo.png') }}" class="link-logo img-fluid" id="fblogo" onmouseover="" style="cursor: pointer"></a>
+        
+        </div>
+  </div>
+</div>
+
+
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/demo">
-    <img src="{{ asset('images/site/logos/logoFR.svg') }}" class="site-logo" height="25%" width="25%">
+  <a class="navbar-brand">
+    <img src="{{ asset('images/site/logos/logoFR.svg') }}" class="site-logo" height="40%" width="40%">
   </a>
 </nav>
 <div class="container">
@@ -157,7 +173,7 @@
         <img src="{{ asset('images/site/arrowdown.png') }}" id="close-contactform" class="close-contactform" height="4%" width="5%">
 
         <div class="container">
-          <form action="">
+          <form id="formmail" action="">
             <div class="row ">
               <div class="col-12 tacenterz ">
                 <h2> Formulaire de contact </h2>
@@ -165,28 +181,33 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <input type="text" id="name" class=" ifc" placeholder="Nom">
+                <input type="text" required="true" name="name" id="name" class=" ifc" placeholder="Nom">
               </div>
             </div>
 
             <div class="row">
               <div class="col-12">
-                <input type="text" id="email" class=" ifc" placeholder="Votre@Mail">
+                <input type="email"  name="email" id="email" class=" ifc" placeholder="Votre@Mail">
               </div>
             </div>
 
             <div class="row">
               <div class="col-12">
-                <textarea type="textarea" rows="6" cols="30" id="message" class=" ifc" placeholder="Votre Message"></textarea>
+                <textarea type="textarea" name="message"rows="6" cols="30" id="message" class=" ifc" placeholder="Votre Message"></textarea>
               </div>
             </div>
           </form>
           <div class="row ">
             <div class="col-12 centerz">
 
-              <input type="submit" value="Submit" class=" ifc">
+              <input id="submitmail" type="submit" value="Envoi" class="ifc btn" name="envoi">
 
             </div>
+
+
+
+            <div class="col-12 centerz"> <p id="errormail" > </p> </div>
+             <div class="col-12 centerz"> <p id="confirm" > </p> </div>
           </div>
 
 
@@ -228,16 +249,18 @@
         <div class="col-12 col-sm-12">
 
           <div class="input-group">
+          
             <select class="custom-select" id="inputGroupSelect04">
-              <option selected>Filtrer</option>
+              
+               <option selected value="a">Tout</option>
 
             </select>
-
+          
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="submit">Filtrer</button>
+              <button class="btn btn-outline-secondary" id="buttonfilter"type="submit">Filtrer</button>
             </div>
           </div>
-
+        
           <div class="row projetsemp">
 
             <div id="emplacements-projets" class="emplacements-projets col-12">
@@ -245,13 +268,55 @@
 
 
               </div>
-
+              
 
               {# La au clique sur l'apercu je declanche le chargement du projet correspondant sur le slider qui viens du bas #}
 
             </div>
+            
           </div>
-
+            <div class="row ">
+            <div class="col-12 scrollalertzone" id="scrollalertx">
+<svg version="1.1" id="scrollalert" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+<g>
+	<g id="arrow-drop-down">
+		<polygon points="0,63.75 127.5,130.25 255,63.75 		"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+              </div>
+              </div>
         </div>
       </div>
       {# COUCHE DETAILS PROJET #}
@@ -337,6 +402,48 @@
           
       
     </div>
+    <div class="row ">
+            <div class="col-12 scrollalertzone" id="scrollalertx">
+<svg version="1.1" id="scrollalert2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+<g>
+	<g id="arrow-drop-down">
+		<polygon points="0,63.75 127.5,130.25 255,63.75 		"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+              </div>
+              </div>
     </div>
 
   </div>
@@ -357,14 +464,14 @@
 <div class="row">
   <div class="logo-links ">
     <div class="col-12 spot-btn">
-      <img src="{{ asset('images/site/logos/github-logo.png') }}" class="link-logo img-fluid" id="githublogo" onmouseover="" style="cursor: pointer">
+     <a href="https://github.com/xF1owx"><img src="{{ asset('images/site/logos/github-logo.png') }}"  class="link-logo img-fluid" id="githublogo" onmouseover="" style="cursor: pointer"></a>
 
 
-      <img src="{{ asset('images/site/logos/linked-in-logo.png') }}" class="link-logo img-fluid" id="linkedinlogo" onmouseover=""
-        style="cursor: pointer">
+      <a href="https://fr.linkedin.com/in/florian-rouillier-383354ab"><img src="{{ asset('images/site/logos/linked-in-logo.png') }}" class="link-logo img-fluid" id="linkedinlogo" onmouseover=""
+        style="cursor: pointer"></a>
 
 
-      <img src="{{ asset('images/site/logos/fb-logo.png') }}" class="link-logo img-fluid" id="fblogo" onmouseover="" style="cursor: pointer">
+      <a href="https://www.facebook.com/florian.rouillier.5"><img src="{{ asset('images/site/logos/fb-logo.png') }}" class="link-logo img-fluid" id="fblogo" onmouseover="" style="cursor: pointer"></a>
     </div>
   </div>
 </div>

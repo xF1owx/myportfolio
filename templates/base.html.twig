@@ -11,7 +11,7 @@
 <meta name="theme-color" content="#0275d8">
 <meta name="msapplication-navbutton-color" content="#0275d8">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="msapplication-starturl" content="http://localhost:8889/accueil">
+<meta name="msapplication-starturl" content="https://florianr.promo-17.codeur.online/myportfolio/public/accueil">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="icon" href="icone.png">
@@ -32,18 +32,21 @@
 
     
     <body>
-    <div class="site">
+    
         {% block body %}{% endblock %}
         {% block footer %}{% endblock %}
         {% block javascripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
         <script type="text/javascript" src="assets/js/ajax.js"></script>
-<script type="text/javascript" src="assets/js/app.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="assets/js/mail.js"></script>
  <script src="assets/js/bootstrap.min.js"></script>
  <script type="text/javascript" src="assets/js/links.js"></script>
  
  {% endblock %}
  
-   </div>
+  
     </body>
         
         
