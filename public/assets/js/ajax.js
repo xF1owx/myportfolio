@@ -1,6 +1,16 @@
 var nbProject = 0;
 var listen = 0;
 
+if(navigator.onLine)
+            {
+                console.log("Browser is online");
+            }
+            else
+            {
+                document.getElementById('fetchbar').style.display = 'none';
+                console.log("Browser is offline");
+            }
+
 // fetch de la description de l'accueil //
 fetch('https://florianr.promo-17.codeur.online/api-portfolio/controllers/description-accueil.php')
   .then(function (response) {
